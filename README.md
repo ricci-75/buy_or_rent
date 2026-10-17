@@ -18,6 +18,8 @@ uv run streamlit run src/buy_or_rent/app.py
 ## Docker
 
 ```bash
+docker compose up --build
+# or
 docker build -t buy-or-rent .
 docker run --rm -p 8501:8501 buy-or-rent
 ```
