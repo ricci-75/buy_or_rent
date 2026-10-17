@@ -1,0 +1,24 @@
+[project]
+name = "buy-or-rent"
+version = "0.1.0"
+description = "Streamlit app comparing renting versus buying a home"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit>=1.66.0",
+    "watchdog>=6.0.0",
+]
+
+[project.scripts]
+buy-or-rent = "buy_or_rent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.1",
+    "ty>=0.0.89",
+]
