@@ -11,8 +11,6 @@ Single page: all inputs in the sidebar, then key figures (loan, credit cost, deb
 ```bash
 uv sync
 uv run buy-or-rent
-# or
-uv run streamlit run src/buy_or_rent/app.py
 ```
 
 ## Docker
